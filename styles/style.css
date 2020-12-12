@@ -310,3 +310,67 @@ img {
   border: #feb633 2px solid;
   background-color: transparent;
 }
+
+/* Responsive */
+
+@media (max-width: 788px) {
+  .home {
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+  }
+  nav .navLinks {
+    display: none;
+  }
+  nav {
+    justify-content: flex-start;
+  }
+  nav .logo {
+    margin-left: 20px;
+  }
+  .home .introduceContent {
+    width: 100%;
+    height: 50%;
+    margin-top: 10%;
+  }
+  .home .introduceContent h1 {
+    font-size: 40px;
+  }
+  .home .introduceContent h3 {
+    font-size: 25px;
+  }
+  .home .introduceContent .hireMeButton {
+    padding: 10px 0;
+  }
+  .introduceImage {
+    width: 100%;
+    height: 100%;
+  }
+  .image img {
+    height: auto;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* display: none; */
+  }
+  .about .aboutContainer {
+    flex-direction: column;
+  }
+  .aboutContainer .aboutContent {
+    font-size: 14px;
+    width: 95%;
+  }
+  .aboutContainer .aboutContent p {
+    display: inline;
+  }
+
+  .aboutButtons button {
+    font-size: 16px;
+    width: 50%;
+  }
+  .aboutButtons button:last-of-type {
+    margin-left: 15px;
+  }
+}
