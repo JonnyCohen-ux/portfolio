@@ -14,6 +14,7 @@ const burgerButton = document.querySelector(".burgermenuButton");
 burgerButton.addEventListener("click", () => {
   const repsonsiveNavbar = document.querySelector(".responsiveNavLinks");
   repsonsiveNavbar.classList.toggle("openResposiveNav");
+  navbar.classList.toggle("sticky");
 });
 
 // Set Active Link Class
