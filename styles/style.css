@@ -40,7 +40,7 @@ body {
 }
 
 .openResposiveNav {
-  top: 80px;
+  top: 77px;
 }
 
 .responsiveNavLinks ul li {
@@ -51,7 +51,7 @@ nav {
   color: #fff;
   font-family: "Roboto", sans-serif;
   max-width: 100%;
-  margin: auto;
+  /* margin: auto; */
   position: fixed;
   top: 0;
   left: 50%;
