@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden";
+});
+
 const navbar = document.querySelector("nav");
 window.addEventListener("scroll", function () {
   navbar.classList.toggle("sticky", window.scrollY > 25);
