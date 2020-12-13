@@ -91,6 +91,7 @@ body {
   100% {
     opacity: 0;
     visibility: hidden;
+    display: none;
   }
 }
 
@@ -286,7 +287,6 @@ a.active::before {
 }
 .smallSection {
   min-height: 50vh;
-  width: 100%;
 }
 img {
   max-width: 100%;
@@ -368,12 +368,11 @@ img {
 
 .about {
   background-color: var(--about-color);
-  /* padding: 100px 0; */
-  width: 100%;
+  padding: 100px 0;
 }
 
 .aboutContainer {
-  width: 100%;
+  width: 80%;
   height: 50vh;
   margin: auto;
   display: flex;
@@ -507,11 +506,13 @@ img {
   transition: 0.5s;
   margin: 25px 0;
   cursor: default;
+  transition: 0.5s;
 }
 
 .servicesContainer .serviceCard:hover {
   margin-top: 10px;
   box-shadow: 0 0 30px #555;
+  background-color: red;
 }
 
 .servicesContainer .serviceCard:nth-child(1):before,
@@ -581,9 +582,120 @@ img {
   text-align: center;
 }
 
+.projects {
+  background-color: var(--about-color);
+}
+/* Projects */
+.projectsHeader {
+  text-align: center;
+  color: var(--light-grat);
+  margin-bottom: 35px;
+}
+.projectsHeader h1 {
+  font-size: 60px;
+  padding: 10px 0;
+  position: relative;
+  display: inline;
+}
+.projectsHeader h1:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50%;
+  height: 3px;
+  background-color: #feb633;
+  transform: translateX(-50%);
+}
+
+.projectsCards {
+  width: 80%;
+  margin: 0 auto;
+  height: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.proCard:nth-of-type(1) {
+  width: 330px;
+  height: 250px;
+  border: 1px solid #fff;
+  background: url(/images/project1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: #feb633; */
+  background-blend-mode: screen;
+  cursor: pointer;
+  z-index: 100;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.proCard:nth-of-type(2) {
+  width: 330px;
+  height: 250px;
+  border: 1px solid #fff;
+  background: url(/images/project2.png), white;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background: #feb633; */
+  cursor: pointer;
+  z-index: 100;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.proCard:nth-of-type(3) {
+  width: 330px;
+  height: 250px;
+  border: 1px solid #fff;
+  background: url(/images/project3.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 100;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.proCard:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #dadada;
+}
+
+.proCard a {
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  font-size: 20px;
+  background-color: #303131;
+  border-radius: 8px;
+  border: 1px solid #fafafa;
+  /* -webkit-text-stroke: 1px #dadada; */
+  cursor: pointer;
+  font-weight: 700;
+  left: 50%;
+  position: absolute;
+  display: block;
+  width: 55%;
+  text-align: center;
+  bottom: -50px;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  padding: 10px 0;
+}
+.proCard:hover a {
+  bottom: 0%;
+}
+
 /* Responsive */
 
 @media (max-width: 788px) {
+  .openColorSwitcher {
+    right: 50px;
+  }
   .home {
     flex-direction: column;
     width: 100%;
@@ -627,7 +739,6 @@ img {
   }
   .about .aboutContainer {
     flex-direction: column;
-    padding-top: 10px;
   }
   .aboutContainer .aboutContent {
     font-size: 14px;
@@ -648,13 +759,11 @@ img {
   .burgermenuButton {
     display: flex;
   }
-  .circle:nth-child(4),
   .circle:nth-child(1),
   .circle:nth-child(2),
   .circle:nth-child(3) {
     display: none;
   }
-
   .servicesContainer {
     width: 100%;
     height: auto;
@@ -665,8 +774,6 @@ img {
 
   .header h1 {
     font-size: 35px;
-    margin-top: 45px;
-    display: block;
   }
 
   .servicesContainer .serviceCard {
