@@ -286,6 +286,7 @@ a.active::before {
 }
 .smallSection {
   min-height: 50vh;
+  width: 100%;
 }
 img {
   max-width: 100%;
@@ -367,11 +368,12 @@ img {
 
 .about {
   background-color: var(--about-color);
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  width: 100%;
 }
 
 .aboutContainer {
-  width: 80%;
+  width: 100%;
   height: 50vh;
   margin: auto;
   display: flex;
@@ -625,6 +627,7 @@ img {
   }
   .about .aboutContainer {
     flex-direction: column;
+    padding-top: 10px;
   }
   .aboutContainer .aboutContent {
     font-size: 14px;
@@ -645,11 +648,13 @@ img {
   .burgermenuButton {
     display: flex;
   }
+  .circle:nth-child(4),
   .circle:nth-child(1),
   .circle:nth-child(2),
   .circle:nth-child(3) {
     display: none;
   }
+
   .servicesContainer {
     width: 100%;
     height: auto;
@@ -660,6 +665,8 @@ img {
 
   .header h1 {
     font-size: 35px;
+    margin-top: 45px;
+    display: block;
   }
 
   .servicesContainer .serviceCard {
