@@ -190,7 +190,7 @@ a.active::before {
   transition: 0.5s;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  z-index: 10;
+  z-index: 99;
 }
 
 .colorSwitcher .colorSwitcherButton {
