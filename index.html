@@ -19,6 +19,10 @@
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- Scroll Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -83,6 +87,7 @@
     <section id="home" class="home smallSection">
         <div class="introduceContent">
             <div class="content animate__animated animate__fadeInLeft">
+
                 <h1>I'm Yonatan</h1>
                 <h3>Full Stack Web Developer <br> Front End & Back End</h3>
                 <a class=" hireMeButton" href="#">Hire Me</a>
@@ -98,6 +103,7 @@
 
     <!-- About Section Start -->
     <section id="about" class="about smallSection">
+
         <div class="aboutContainer">
             <div class="aboutLogo">
                 <div class="circle"></div>
@@ -105,11 +111,12 @@
                 <div class="circle"></div>
                 <div class="circle"></div>
                 <h1>About Me</h1>
+
             </div>
             <div class="aboutContent">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, necessitatibus placeat.</p>
                 <p>laboriosam iure voluptate atque placeat assumenda, consequatur deleniti magni at voluptatibus eveniet
-                    autem facilis unde quam consectetur! Suscipit aliquid natus eaque, quos corrupti consequatur
+                    autem facilis unde quam consectetur! Suscipit aliquid natus eaqutae, quos corrupti consequatur
                     eveniet.</p>
                 <br> <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatem similique quam consequuntur,
@@ -131,7 +138,7 @@
         </div>
         <div class="servicesContainer">
             <!-- Service Card Start -->
-            <div class="serviceCard">
+            <div data-aos="fade-right" data-aos-duration="1500" class="serviceCard">
                 <div class="icon">
                     <!-- <i class="fa fa-laptop"></i> -->
                     <i class="fas fa-laptop"></i>
@@ -145,7 +152,7 @@
             </div>
             <!-- Service Card End -->
             <!-- Service Card Start -->
-            <div class="serviceCard">
+            <div data-aos="fade-left" data-aos-duration="1500" class="serviceCard">
                 <div class="icon">
                     <!-- <i class="fa fa-laptop"></i> -->
                     <i class="fas fa-paint-brush"></i>
@@ -159,7 +166,7 @@
             </div>
             <!-- Service Card End -->
             <!-- Service Card Start -->
-            <div class="serviceCard">
+            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" class="serviceCard">
                 <div class="icon">
                     <!-- <i class="fa fa-laptop"></i> -->
                     <i class="fas fa-mobile-alt"></i> </div>
@@ -172,7 +179,7 @@
             </div>
             <!-- Service Card End -->
             <!-- Service Card Start -->
-            <div class="serviceCard">
+            <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500" class="serviceCard">
                 <div class="icon">
                     <i class="far fa-images"></i>
                 </div>
@@ -189,6 +196,10 @@
     <!-- Services Section End -->
 
     <script src="./javascript/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
