@@ -473,9 +473,11 @@ img {
   width: 80%;
   /* background-color: red; */
   height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: 1fr 1fr; */
+  /* justify-content: center; */
+  flex-wrap: wrap;
   margin: auto;
 }
 
