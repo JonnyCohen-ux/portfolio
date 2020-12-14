@@ -854,7 +854,8 @@ footer span {
   }
   .circle:nth-child(1),
   .circle:nth-child(2),
-  .circle:nth-child(3) {
+  .circle:nth-child(3),
+  .circle:nth-child(4) {
     display: none;
   }
   .servicesContainer {
