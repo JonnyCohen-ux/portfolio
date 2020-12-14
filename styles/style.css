@@ -803,6 +803,12 @@ footer span {
   nav .logo {
     margin-left: 20px;
   }
+  .home {
+    flex-direction: column;
+  }
+  .home .image {
+    display: none;
+  }
   .home .introduceContent {
     width: 100%;
     height: 50%;
@@ -841,7 +847,9 @@ footer span {
   .aboutContainer .aboutContent p {
     display: inline;
   }
-
+  .aboutLogo h1 {
+    font-size: 30px;
+  }
   .aboutButtons button {
     font-size: 16px;
     width: 50%;
@@ -938,6 +946,9 @@ footer span {
     flex-direction: column;
     justify-content: space-around;
   }
+  .projectsHeader h1 {
+    font-size: 35px;
+  }
   .proCard {
     margin: 15px 0;
   }
@@ -953,6 +964,7 @@ footer span {
 
     border-bottom: 5px solid var(--light-grat);
   }
+
   .contactContent {
     flex-direction: column;
   }
@@ -963,10 +975,27 @@ footer span {
     display: flex;
     justify-content: center;
     align-items: center;
+    pad: 30px 0;
+  }
+  .contactContent div:last-child {
+    height: 500px;
   }
   .contactLogo h2 {
     font-size: 90px;
     color: #feb633;
+  }
+  .contactLogo h2 {
+    font-size: 75px;
+  }
+  .contact .contactTitle h1 {
+    color: var(--light-grat);
+    font-size: 35px;
+    position: relative;
+    /* display: inline; */
+    text-align: center;
+  }
+  .contact .contactTitle h1:before {
+    width: 30%;
   }
 }
 
