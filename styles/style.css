@@ -371,7 +371,7 @@ img {
 
 .about {
   background-color: var(--about-color);
-  /* padding: 100px 0; */
+  padding: 100px 0;
   width: 100%;
 }
 

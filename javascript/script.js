@@ -24,14 +24,33 @@ burgerButton.addEventListener("click", () => {
 
 // Set Active Link Class
 const navLinks = document.querySelector(".navLinks"),
-  navLinksLi = document.querySelectorAll("li");
+  navLinksLi = navLinks.querySelectorAll("li");
 for (let i = 0; i < navLinksLi.length; i++) {
   const aLinks = navLinksLi[i].querySelector("a");
   aLinks.addEventListener("click", () => {
     for (let j = 0; j < navLinksLi.length; j++) {
       let link = navLinksLi[j].querySelector("a");
+      console.log(link);
       link.classList.remove("active");
     }
     aLinks.classList.add("active");
   });
+}
+
+// Disable Ana
+const styles = document.querySelectorAll(".style");
+const changeColorButtons = document.querySelectorAll(".color");
+
+for (let i = 0; i < styles.length; i++) {
+  let colorSelected = styles[i].className.split(" ")[1];
+  for (let j = 0; j < changeColorButtons.length; j++) {
+    changeColorButtons[j].addEventListener("click", () => {
+      let buttonSwithcer = changeColorButtons[j].className.split(" ")[0];
+      if (buttonSwithcer === colorSelected) {
+        styles[i].removeAttribute("disabled");
+      } else {
+        styles[i].setAttribute("disabled", true);
+      }
+    });
+  }
 }

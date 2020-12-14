@@ -1,0 +1,63 @@
+.navLinks ul li a:not(.active):hover,
+a.active,
+a.active::before,
+.home .introduceContent .hireMeButton:hover,
+.aboutButtons button:last-of-type,
+.aboutButtons button:hover,
+.contactLogo h2,
+footer span,
+nav .logo {
+  color: yellowgreen;
+}
+.navLinks ul li a:not(.active):before,
+a.active::before {
+  border-bottom: 3px solid yellowgreen;
+}
+
+.home .introduceContent .hireMeButton,
+.projectsHeader h1:before,
+.contact .contactTitle h1:before,
+.contactContent h3::before,
+.aboutButtons button {
+  background-color: yellowgreen;
+}
+.home .introduceContent .hireMeButton,
+.home .introduceContent .hireMeButton:hover,
+.aboutButtons button:last-of-type,
+.aboutButtons button:hover,
+.aboutButtons button {
+  border: yellowgreen 2px solid;
+}
+
+.aboutContainer .aboutLogo h1::before,
+.header h1::before {
+  border-bottom: 4px solid yellowgreen;
+}
+
+.circle:nth-child(1) {
+  border: 30px solid yellowgreen;
+}
+.circle:nth-child(3) {
+  border: 30px solid yellowgreen;
+}
+
+.servicesContainer .serviceCard:nth-child(1):before,
+.serviceCard:nth-child(3):before {
+  border-left: 3px solid yellowgreen;
+  border-top: 3px solid yellowgreen;
+}
+.servicesContainer .serviceCard:nth-child(1):after,
+.serviceCard:nth-child(3):after {
+  border-right: 3px solid yellowgreen;
+  border-bottom: 3px solid yellowgreen;
+}
+.servicesContainer .serviceCard:nth-child(2):before,
+.serviceCard:nth-child(4):before {
+  border-right: 3px solid yellowgreen;
+  border-top: 3px solid yellowgreen;
+}
+.servicesContainer .serviceCard:nth-child(2):after,
+.serviceCard:nth-child(4):after {
+  border-left: 3px solid yellowgreen;
+  border-bottom: 3px solid yellowgreen;
+}
