@@ -302,7 +302,7 @@ img {
   /* padding: 300px 0; */
   width: 80%;
   margin: 95px auto 0 auto;
-  height: calc(100vh - 95px);
+  height: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -377,7 +377,7 @@ img {
 
 .aboutContainer {
   width: 80%;
-  height: 50vh;
+  height: auto;
   margin: auto;
   display: flex;
   align-items: center;
@@ -608,7 +608,7 @@ img {
 .projectsCards {
   width: 80%;
   margin: 0 auto;
-  height: 40vh;
+  height: auto;
   display: flex;
   justify-content: space-around;
 }
@@ -687,10 +687,11 @@ img {
   bottom: 0%;
 }
 
-#contact {
+.contact {
   background-color: var(--home-color);
   /* padding: 100px 0; */
   width: 100%;
+  height: auto;
 }
 .contact .contactTitle h1 {
   color: var(--light-grat);
@@ -698,6 +699,7 @@ img {
   position: relative;
   /* display: inline; */
   text-align: center;
+  height: auto;
 }
 .contact .contactTitle h1:before,
 .contactContent h3::before {
@@ -716,7 +718,7 @@ img {
 }
 .contact .contactContainer {
   width: 80%;
-  height: 40vh;
+  height: auto;
   margin: auto;
   display: flex;
   align-items: center;
@@ -726,7 +728,7 @@ img {
 .contactLogo {
   width: 20%;
   /* background-color: greenyellow; */
-  height: 80%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -740,7 +742,7 @@ img {
 
 .contactContent {
   background-color: rgba(240, 248, 255, 0.05);
-  width: 80%;
+  width: auto;
   height: 80%;
   margin-left: 10px;
   display: flex;
