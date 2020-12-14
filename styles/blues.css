@@ -62,11 +62,13 @@ a.active::before {
   border-bottom: 3px solid deepskyblue;
 }
 
-.servicesContainer .serviceCard:nth-child(2):before,
-.serviceCard:nth-child(4):before {
-  border: 3px solid deepskyblue;
-}
-.servicesContainer .serviceCard:nth-child(1):before,
-.serviceCard:nth-child(3):before {
-  border: 3px solid deepskyblue;
+@media (max-width: 788px) {
+  .servicesContainer .serviceCard:nth-child(2):before,
+  .serviceCard:nth-child(4):before {
+    border: 3px solid deepskyblue;
+  }
+  .servicesContainer .serviceCard:nth-child(1):before,
+  .serviceCard:nth-child(3):before {
+    border: 3px solid deepskyblue;
+  }
 }

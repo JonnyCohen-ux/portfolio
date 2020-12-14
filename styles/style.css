@@ -320,6 +320,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  line-height: 42px;
 }
 
 .home .introduceContent h1 {
@@ -333,16 +334,17 @@ img {
   font-size: 25px;
   color: #ddd;
   margin: 10px 0;
-  font-weight: 200;
+  font-weight: normal;
   color: var(--light-grat);
   font-weight: 400;
+  font-size: 26px;
 }
 
 .home .introduceContent .hireMeButton {
-  padding: 15px 30px;
+  padding: 10px 40px;
   background-color: #feb633;
   display: block;
-  width: 70%;
+  width: 50%;
   text-align: center;
   font-size: 24px;
   border-radius: 5px;
