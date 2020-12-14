@@ -25,6 +25,7 @@ body {
   background: var(--home-color);
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Responsive Navbar */
@@ -32,9 +33,9 @@ body {
   width: 100%;
   height: 150px;
   /* background-color: red; */
-  z-index: 1;
+  z-index: 99;
   position: fixed;
-  top: -90px;
+  top: -150px;
   background-color: var(--sticky-navbar);
   transition: 0.5s ease;
 }
@@ -46,12 +47,14 @@ body {
 .responsiveNavLinks ul li {
   margin: 10px 10px;
 }
+.responsiveNavLinks ul li a {
+}
 
 /* Loader */
 
 .loader {
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   background-color: var(--home-color);
   position: fixed;
   z-index: 99;
@@ -108,7 +111,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 10;
+  z-index: 100;
   background-color: #2b2c2c;
 }
 
@@ -246,9 +249,9 @@ a.active::before {
   height: 40px;
   /* background-color: red; */
   position: fixed;
-  right: 35px;
+  right: 55px;
   top: 25px;
-  z-index: 20;
+  z-index: 101;
   display: flex;
   cursor: pointer;
   display: none;
@@ -368,7 +371,8 @@ img {
 
 .about {
   background-color: var(--about-color);
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  width: 100%;
 }
 
 .aboutContainer {
@@ -503,16 +507,9 @@ img {
   height: 250px;
   background-color: #2b2c2c;
   position: relative;
-  transition: 0.5s;
   margin: 25px 0;
   cursor: default;
   transition: 0.5s;
-}
-
-.servicesContainer .serviceCard:hover {
-  margin-top: 10px;
-  box-shadow: 0 0 30px #555;
-  background-color: red;
 }
 
 .servicesContainer .serviceCard:nth-child(1):before,
@@ -611,7 +608,7 @@ img {
 .projectsCards {
   width: 80%;
   margin: 0 auto;
-  height: 5px;
+  height: 40vh;
   display: flex;
   justify-content: space-around;
 }
@@ -627,7 +624,7 @@ img {
   /* background: #feb633; */
   background-blend-mode: screen;
   cursor: pointer;
-  z-index: 100;
+  z-index: 90;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
@@ -642,7 +639,7 @@ img {
   background-repeat: no-repeat;
   /* background: #feb633; */
   cursor: pointer;
-  z-index: 100;
+  z-index: 90;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
@@ -656,7 +653,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  z-index: 100;
+  z-index: 90;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
@@ -690,13 +687,109 @@ img {
   bottom: 0%;
 }
 
+#contact {
+  background-color: var(--home-color);
+  /* padding: 100px 0; */
+  width: 100%;
+}
+.contact .contactTitle h1 {
+  color: var(--light-grat);
+  font-size: 55px;
+  position: relative;
+  /* display: inline; */
+  text-align: center;
+}
+.contact .contactTitle h1:before,
+.contactContent h3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 10%;
+  height: 3px;
+  background-color: #feb633;
+  transform: translateX(-50%);
+}
+
+.contactContent h3::before {
+  width: 100%;
+}
+.contact .contactContainer {
+  width: 80%;
+  height: 40vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.contactLogo {
+  width: 20%;
+  /* background-color: greenyellow; */
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 5px solid var(--light-grat);
+}
+
+.contactLogo h2 {
+  font-size: 120px;
+  color: #feb633;
+}
+
+.contactContent {
+  background-color: rgba(240, 248, 255, 0.05);
+  width: 80%;
+  height: 80%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.contactContent div {
+  /* background-color: red; */
+  width: 33%;
+  height: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.contact div li {
+  margin: 10px 0;
+  font-weight: 600;
+  color: var(--light-grat);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact div h3 {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 2px;
+  position: relative;
+  top: -10px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  color: var(--light-grat);
+  border-top: 2px solid var(--sticky-navbar);
+  font-size: 18px;
+}
+
+footer span {
+  color: #feb633;
+  font-weight: 900;
+  font-size: 20px;
+}
 /* Responsive */
 
 @media (max-width: 788px) {
-  .openColorSwitcher {
-    right: 50px;
-  }
-  .home {
+  .wrapp .home {
     flex-direction: column;
     width: 100%;
     overflow-y: auto;
@@ -846,5 +939,32 @@ img {
   }
   .proCard {
     margin: 15px 0;
+  }
+  .contact .contactContainer {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .contactLogo {
+    border-right: none;
+    width: 100%;
+    height: 20%;
+    margin: 10px 0;
+
+    border-bottom: 5px solid var(--light-grat);
+  }
+  .contactContent {
+    flex-direction: column;
+  }
+  .contactContent div {
+    /* display: none; */
+    border: 2px solid #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactLogo h2 {
+    font-size: 90px;
+    color: #feb633;
   }
 }
