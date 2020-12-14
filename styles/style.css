@@ -687,11 +687,10 @@ img {
   bottom: 0%;
 }
 
-.contact {
+#contact {
   background-color: var(--home-color);
   /* padding: 100px 0; */
   width: 100%;
-  height: auto;
 }
 .contact .contactTitle h1 {
   color: var(--light-grat);
@@ -699,7 +698,6 @@ img {
   position: relative;
   /* display: inline; */
   text-align: center;
-  height: auto;
 }
 .contact .contactTitle h1:before,
 .contactContent h3::before {
@@ -718,7 +716,7 @@ img {
 }
 .contact .contactContainer {
   width: 80%;
-  height: auto;
+  height: 40vh;
   margin: auto;
   display: flex;
   align-items: center;
@@ -728,7 +726,7 @@ img {
 .contactLogo {
   width: 20%;
   /* background-color: greenyellow; */
-  height: auto;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -742,7 +740,7 @@ img {
 
 .contactContent {
   background-color: rgba(240, 248, 255, 0.05);
-  width: auto;
+  width: 80%;
   height: 80%;
   margin-left: 10px;
   display: flex;
