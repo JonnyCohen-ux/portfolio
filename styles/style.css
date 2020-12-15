@@ -817,6 +817,7 @@ footer span {
   }
   .home {
     flex-direction: column;
+    height: 60vh;
   }
   .home .image {
     display: none;
@@ -833,7 +834,16 @@ footer span {
     font-size: 25px;
   }
   .home .introduceContent .hireMeButton {
-    padding: 10px 0;
+    padding: 10px 40px;
+    background-color: #feb633;
+    display: block;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-top: 35px;
+    transition: 0.2s;
+    border: #feb633 2px solid;
   }
   .introduceImage {
     width: 100%;
